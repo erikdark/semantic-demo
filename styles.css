@@ -1,0 +1,68 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 1rem;
+}
+
+header, main, footer {
+  margin-bottom: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.bad {
+  background: #fff8f8;
+  border: 2px dashed #e74c3c;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.notes {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.notes li {
+  margin-bottom: 0.5rem;
+}
+
+.product, article {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.product img, article img {
+  border-radius: 4px;
+}
+
+.btn, button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #aaa;
+  color: white;
+}
+
+button {
+  background: #2ecc71;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background: #27ae60;
+}
