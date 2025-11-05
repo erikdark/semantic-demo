@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Плохой пример разметки</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container bad">
+    <div class="header"> <!-- ❌ нет <header> -->
+      <h1>Интернет-магазин</h1>
+      <div class="menu">
+        <a href="#">Главная</a> | 
+        <a href="#">Каталог</a> | 
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+
+    <div class="main"> <!-- ❌ нет <main> -->
+      <div class="product"> <!-- ❌ div вместо article -->
+        <div class="img">
+          <img src="https://via.placeholder.com/200x150" />
+          <!-- ❌ нет alt -->
+        </div>
+        <div class="text">
+          <h2>Товар 1</h2>
+          <p>Лучший товар на свете!</p>
+          <div class="btn">Купить</div> <!-- ❌ кнопка не кнопка -->
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"> <!-- ❌ нет <footer> -->
+      <p>Все права защищены 2025</p>
+    </div>
+  </div>
+
+  <div class="notes">
+    <h3>⚠️ Проблемы:</h3>
+    <ul>
+      <li>❌ Везде <code>div</code> вместо семантических тегов (<code>header</code>, <code>main</code>, <code>article</code>, <code>footer</code>).</li>
+      <li>❌ Нет <code>alt</code> у изображений — недоступно для скринридеров.</li>
+      <li>❌ Кнопка — обычный <code>div</code>, не кликабельна с клавиатуры.</li>
+      <li>❌ Нет структуры документа (заголовки, разделы).</li>
+    </ul>
+  </div>
+</body>
+</html>
